@@ -1,7 +1,9 @@
 import { ShoppingCart } from 'lucide-react';
-import React from 'react';
+import React, { use } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ navPromise }) => {
+    const navData = use(navPromise).data;
+    console.log(navData);
     return (
         <div className='container mx-auto'>
             <div className="navbar bg-base-100">
@@ -13,21 +15,21 @@ const Navbar = () => {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li><a>Parent</a></li>
-                            <li><a>Item 3</a></li>
+                            {
+                                navData.map(nav => <li><a href={nav.path}>{nav.name}</a></li>)
+                            }
                         </ul>
                     </div>
-                    <a className="bg-linear-to-b from-primary to-purple-500 bg-clip-text text-transparent text-3xl font-extrabold">DigiTools</a>
+                    <a className="bg-linear-to-b from-primary to-purple-500 bg-clip-text text-transparent text-xl md:text-3xl font-extrabold">DigiTools</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li><a>Parent</a></li>
-                        <li><a>Item 3</a></li>
+                    <ul className="menu menu-horizontal px-1 font-bold">
+                        {
+                            navData.map(nav => <li><a href={nav.path}>{nav.name}</a></li>)
+                        }
                     </ul>
                 </div>
-                <div className="navbar-end gap-5">
+                <div className="navbar-end gap-2 md:gap-4">
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                             <div className="indicator">
@@ -47,7 +49,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <a>Login</a>
+                    <a className='font-bold'>Login</a>
                     <a className="btn bg-linear-to-r from-primary to-purple-500 text-white font-bold border-none rounded-full">Get Started</a>
                 </div>
             </div>
