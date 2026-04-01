@@ -3,7 +3,6 @@ import React, { use } from 'react';
 
 const Navbar = ({ navPromise }) => {
     const navData = use(navPromise).data;
-    console.log(navData);
     return (
         <div className='container mx-auto'>
             <div className="navbar bg-base-100">
@@ -16,7 +15,7 @@ const Navbar = ({ navPromise }) => {
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             {
-                                navData.map(nav => <li><a href={nav.path}>{nav.name}</a></li>)
+                                navData.map(nav => <li key={nav.id}><a href={nav.path}>{nav.name}</a></li>)
                             }
                         </ul>
                     </div>
@@ -25,7 +24,7 @@ const Navbar = ({ navPromise }) => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-bold">
                         {
-                            navData.map(nav => <li><a href={nav.path}>{nav.name}</a></li>)
+                            navData.map(nav => <li key={nav.id}><a href={nav.path}>{nav.name}</a></li>)
                         }
                     </ul>
                 </div>

@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates and export options.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Cover letter builder"
+    ],
+    "icon": "https://i.ibb.co/9mM6JtXf/File-Text.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build a stunning personal portfolio website with ready-made sections.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Responsive design",
+      "SEO optimized",
+      "Dark mode",
+      "Custom domain support"
+    ],
+    "icon": "https://i.ibb.co/9H0xDRxK/Globe.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Task Manager Plus",
+    "description": "Organize tasks, projects, and deadlines with smart reminders.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Unlimited tasks",
+      "Priority labels",
+      "Deadline reminders",
+      "Team collaboration"
+    ],
+    "icon": "https://i.ibb.co/C5WsNc52/Check-Square.png"
+  },
+  {
+    "id": 4,
+    "name": "Fitness Tracker Premium",
+    "description": "Track workouts, calories, and progress with personalized insights.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Workout plans",
+      "Calorie counter",
+      "Progress charts",
+      "Health insights"
+    ],
+    "icon": "https://i.ibb.co/gLSw0jcG/Activity.png"
+  },
+  {
+    "id": 5,
+    "name": "E-commerce Starter Pack",
+    "description": "Everything you need to launch an online store quickly.",
+    "price": 79.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Product pages",
+      "Payment integration",
+      "Order tracking",
+      "Inventory management"
+    ],
+    "icon": "https://i.ibb.co/prJZhWM0/Shopping-Cart.png"
+  },
+  {
+    "id": 6,
+    "name": "Learning Dashboard",
+    "description": "A dashboard for tracking online courses and study progress.",
+    "price": 6.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Course tracker",
+      "Progress analytics",
+      "Study reminders",
+      "Certificate storage"
+    ],
+    "icon": "https://i.ibb.co/pjz5mS9J/Book-Open.png"
+  },
+  {
+    "id": 7,
+    "name": "Social Media Planner",
+    "description": "Plan and schedule your posts across multiple platforms.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Post scheduling",
+      "Analytics",
+      "Content calendar",
+      "Hashtag suggestions"
+    ],
+    "icon": "https://i.ibb.co/VYvMkNpJ/Calendar.png"
+  },
+  {
+    "id": 8,
+    "name": "Cloud Storage Max",
+    "description": "Secure cloud storage with file sharing and backup support.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "1TB storage",
+      "Auto backup",
+      "File sharing",
+      "Encrypted access"
+    ],
+    "icon": "https://i.ibb.co/Q3XWVQRW/Cloud.png"
+  }
+]
