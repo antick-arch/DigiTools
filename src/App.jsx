@@ -8,6 +8,7 @@ import { Suspense } from 'react';
 import { Divide, Info } from 'lucide-react';
 import InfoSection from './components/info/InfoSection';
 import FeatureContainer from './components/featureSection/FeatureContainer';
+import Transform from './components/TransformSection/Transform';
 
 const navPromise = axios.get('nav.json');
 const cardPromise = axios.get('cardData.json');
@@ -40,6 +41,9 @@ function App() {
       </section>
       <section className='py-30'>
         <FeatureContainer featurePromise={featurePromise}></FeatureContainer>
+      </section>
+      <section className='bg-linear-to-r from-primary to-purple-600'>
+        <Transform></Transform>
       </section>
     </main>
     </>

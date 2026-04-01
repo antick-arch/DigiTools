@@ -14,7 +14,7 @@ const FeatureCards = ({feature}) => {
                     <div className='space-y-2'>
                         <h2 className="text-2xl font-bold">{feature.name}</h2>
                         <p className='text-gray-500'>{feature.description}</p>
-                        <p className="text-gray-500"><span className='font-bold text-xl text-black'>${feature.price}</span>/Mo</p>
+                        <p className="text-gray-500"><span className='font-bold text-xl text-black'>${feature.price}</span>/Month</p>
                     </div>
                 </div>
                 <ul className="mt-1 flex flex-col gap-2 text-xs text-gray-500">
