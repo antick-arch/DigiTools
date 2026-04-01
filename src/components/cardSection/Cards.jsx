@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Feature from './Feature';
+import { toast } from 'react-toastify';
 const Cards = ({cardInfo}) => {
-    console.log(cardInfo.icon);
     const [btn,setBtn] = useState(false);
     const handleBuy = () =>{
         setBtn(true);
+        toast.success(`${cardInfo.name} Added Cart Successfully`);
     }
     return (
         <div className="card w-96 bg-base-100 shadow-sm">
