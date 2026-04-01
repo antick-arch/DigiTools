@@ -9,6 +9,7 @@ import { Divide, Info } from 'lucide-react';
 import InfoSection from './components/info/InfoSection';
 import FeatureContainer from './components/featureSection/FeatureContainer';
 import Transform from './components/TransformSection/Transform';
+import Footer from './components/footer/footer';
 
 const navPromise = axios.get('nav.json');
 const cardPromise = axios.get('cardData.json');
@@ -46,6 +47,9 @@ function App() {
         <Transform></Transform>
       </section>
     </main>
+    <footer className='bg-[#101727]'>
+      <Footer></Footer>
+    </footer>
     </>
   )
 }
