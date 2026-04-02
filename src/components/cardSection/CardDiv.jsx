@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CardContainer from './CardContainer';
+import Carts from '../cartsSection/Carts';
 
 const CardDiv = ({cardPromise}) => {
+    const [tabs, setTabs] = useState('products');
     return (
         <div className='my-30 container mx-auto space-y-7'>
             <div className='space-y-4'>
@@ -11,12 +13,15 @@ const CardDiv = ({cardPromise}) => {
                     to boost your productivity and creativity.</p>
             </div>
             <div className='border-2 border-gray-100 w-fit mx-auto p-1 rounded-full'>
-                <button className='btn btn-primary rounded-full border-none'>Products</button>
-                <button className='btn bg-white rounded-full border-none'>Cart (2)</button>
+                <button onClick={()=>setTabs('products')} className={`btn ${tabs === 'products'? 'btn-primary': 'bg-white'} rounded-full border-none`}>Products</button>
+                <button onClick={()=>setTabs('carts')} className={`btn ${tabs === 'carts'? 'btn-primary': 'bg-white'} rounded-full border-none`}>Cart (2)</button>
             </div>
             </div>
             <div>
-                <CardContainer cardPromise={cardPromise}></CardContainer>
+                {
+                    tabs === 'products' && (<CardContainer cardPromise={cardPromise}></CardContainer>) ||
+                    tabs === 'carts' && (<Carts></Carts>)
+                }
             </div>
         </div>
     );

@@ -47,7 +47,7 @@ function App() {
         <Transform></Transform>
       </section>
     </main>
-    <footer className='bg-[#101727]'>
+    <footer data-theme="dark" className='bg-[#101727] pb-7'>
       <Footer></Footer>
     </footer>
     </>
