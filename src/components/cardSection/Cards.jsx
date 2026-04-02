@@ -1,11 +1,18 @@
 import { useState } from 'react';
 import Feature from './Feature';
 import { toast } from 'react-toastify';
-const Cards = ({cardInfo}) => {
+const Cards = ({cardInfo,carts, setCarts}) => {
     const [btn,setBtn] = useState(false);
     const handleBuy = () =>{
         setBtn(true);
+        const findCart = carts.find((item)=>item.id === cardInfo.id);
+        console.log(findCart);
+        if(findCart){
+            toast.error(`${cardInfo.name} already added`);
+            return;
+        }
         toast.success(`${cardInfo.name} Added Cart Successfully`);
+        setCarts([...carts,cardInfo]);
     }
     return (
         <div className="card w-96 bg-base-100 shadow-sm">
@@ -15,7 +22,7 @@ const Cards = ({cardInfo}) => {
                 </div>
                 <div>
                     <div className='h-12 w-12 flex items-center mb-3 border border-gray-200 rounded-full p-2'>
-                        <img className='w-full rounded-full' src={cardInfo.icon} alt={cardInfo.name} />
+                        <img className='w-full' src={cardInfo.icon} alt={cardInfo.name} />
                     </div>
                     <div className='space-y-2'>
                         <h2 className="text-2xl font-bold">{cardInfo.name}</h2>
