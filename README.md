@@ -34,15 +34,15 @@ The app includes checkout interaction with success and error toast notifications
 
 ## Live Demo
 
-- Website: [View Live Demo](https://your-live-demo-link.com)
+- Website: [View Live Demo](https://digitool-shopping.netlify.app/)
 
-## Screenshots / GIF Preview
+## Screenshots Preview
 
 ### Homepage Preview
 
 ![DigiTools Homepage](./src/assets/products/screenshot-home.png)
 
-### Product and Cart Flow (GIF)
+### Product and Cart Flow 
 
 ![DigiTools Cart Flow](./src/assets/products/demo-preview.png)
 
