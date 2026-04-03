@@ -1,16 +1,67 @@
-# React + Vite
+# DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Discover and purchase premium digital tools in a clean, modern, and responsive web experience.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19-0ea5e9?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8-f59e0b?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-0f766e?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![DaisyUI](https://img.shields.io/badge/DaisyUI-5-1f2937?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About The Project
 
-## React Compiler
+DigiTools is a product showcase and cart-based web app where users can browse curated digital products, view product details, and manage purchases through an interactive cart system.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Used
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Tailwind CSS
+- DaisyUI
+- Axios
+- React Toastify
+- Lucide React + React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3 Project Features
+
+1. Dynamic Product Browsing
+Products are loaded from local JSON data and displayed as premium tool cards with pricing, descriptions, and feature lists.
+
+2. Smart Cart Management
+Users can add products to cart, avoid duplicate entries, remove items, and see a live subtotal update instantly.
+
+3. Smooth Purchase Flow
+The app includes checkout interaction with success and error toast notifications for a polished user experience.
+
+## Live Demo
+
+- Website: [View Live Demo](https://your-live-demo-link.com)
+
+## Screenshots / GIF Preview
+
+### Homepage Preview
+
+![DigiTools Homepage](./src/assets/products/screenshot-home.png)
+
+### Product and Cart Flow (GIF)
+
+![DigiTools Cart Flow](./src/assets/products/demo-preview.gif)
+
+> Replace these preview file paths with your actual screenshot and GIF files.
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build For Production
+
+```bash
+npm run build
+```
+
+## Author & Contact
+
+- Name: Your Name
+- Email: your.email@example.com

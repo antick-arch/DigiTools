@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className='pt-10 md:pt-30 container mx-auto'>
             <div className='flex flex-col gap-5 md:flex-row justify-between text-white pb-0 md:pb-10'>
-                <div>
+                <div className='space-y-3'>
                     <h2 className='text-3xl font-bold'>DigiTool</h2>
                     <p className='text-gray-300'>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
                 </div>
