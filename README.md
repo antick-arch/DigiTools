@@ -46,7 +46,7 @@ The app includes checkout interaction with success and error toast notifications
 
 ![DigiTools Cart Flow](./src/assets/products/demo-preview.png)
 
-> Replace these preview file paths with your actual screenshot .
+> Replace these preview file paths with your actual screenshot and GIF files.
 
 ## Run Locally
 
