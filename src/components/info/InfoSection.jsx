@@ -4,13 +4,13 @@ import packageLogo from '../../assets/package.png';
 import rocketLogo from '../../assets/rocket.png';
 const InfoSection = () => {
     return (
-        <div className='container mx-auto space-y-10'>
+        <div className='container mx-auto space-y-5 md:space-y-10'>
             <div className='text-center space-y-4'>
                 <h2 className='text-5xl font-extrabold'>Get Started in 3 Steps</h2>
                 <p className='text-[1rem] text-gray-500'>Start using premium digital tools in minutes, not hours.</p>
             </div>
 
-            <div className='grid grid-cols-3 place-items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-3 place-items-center'>
                 <div className='card w-95 h-95 text-center space-y-4 bg-white p-6'>
                     <div className="flex justify-end">
                         <div className="flex items-center justify-center w-10 h-10 rounded-full bg-linear-to-r from-primary to-purple-500 text-white">

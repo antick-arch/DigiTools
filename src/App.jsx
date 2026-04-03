@@ -38,10 +38,10 @@ const totalPrice = carts.reduce((sum,currentVal)=>sum+currentVal.price,0);
           <CardDiv cardPromise={cardPromise} carts={carts} setCarts = {setCarts} totalPrice={totalPrice}></CardDiv>
         </Suspense>
       </section>
-      <section className='bg-[#f9fafc] py-30' >
+      <section className='bg-[#f9fafc] py-10 md:py-30' >
         <InfoSection></InfoSection>
       </section>
-      <section className='py-30'>
+      <section className='py-10 md:py-30'>
         <FeatureContainer featurePromise={featurePromise}></FeatureContainer>
       </section>
       <section className='bg-linear-to-r from-primary to-purple-600'>

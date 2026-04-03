@@ -4,7 +4,7 @@ import Cards from './Cards';
 const CardContainer = ({cardPromise,carts, setCarts}) => {
     const cardData = use(cardPromise).data;
     return (
-        <div className='grid grid-cols-3 place-items-center gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-3 place-items-center gap-8'>
             {
                 cardData.map(cardInfo => <Cards key={cardInfo.id} cardInfo={cardInfo} carts={carts} setCarts = {setCarts}></Cards>)
             }

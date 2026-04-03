@@ -7,7 +7,7 @@ const CardDiv = ({ cardPromise, carts, setCarts, totalPrice }) => {
     const [tabs, setTabs] = useState('products');
 
     return (
-        <div className='my-30 container mx-auto space-y-7'>
+        <div className='my-10 md:my-30 container mx-auto space-y-7'>
             <div className='space-y-4'>
                 <div className='text-center space-y-4'>
                     <h2 className='text-5xl font-extrabold'>Premium Digital Tools</h2>
