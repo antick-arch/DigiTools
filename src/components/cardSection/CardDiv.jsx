@@ -15,8 +15,8 @@ const CardDiv = ({ cardPromise, carts, setCarts, totalPrice }) => {
                         to boost your productivity and creativity.</p>
                 </div>
                 <div className='border-2 border-gray-100 w-fit mx-auto p-1 rounded-full'>
-                    <button onClick={() => setTabs('products')} className={`btn ${tabs === 'products' ? 'btn-primary' : 'bg-white'} rounded-full border-none`}>Products</button>
-                    <button onClick={() => setTabs('carts')} className={`btn ${tabs === 'carts' ? 'btn-primary' : 'bg-white'} rounded-full border-none`}>Cart ({carts.length})</button>
+                    <button onClick={() => setTabs('products')} className={`btn ${tabs === 'products' ? 'bg-linear-to-r from-primary to-purple-500 text-white' : 'bg-white'} rounded-full border-none`}>Products</button>
+                    <button onClick={() => setTabs('carts')} className={`btn ${tabs === 'carts' ? 'bg-linear-to-r from-primary to-purple-500 text-white' : 'bg-white'} rounded-full border-none`}>Cart ({carts.length})</button>
                 </div>
             </div>
             <div>

@@ -1,11 +1,17 @@
+import { ShoppingCart } from 'lucide-react';
 import React from 'react';
 
 const NotAvailableCart = () => {
     return (
-        <div className='container text-center mx-auto bg-gray-100 h-100 flex flex-col justify-center items-center rounded-2xl'>
-            <h2 className='text-3xl font-bold'>Buy products from Product Tab</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur corporis voluptatum voluptates? Itaque ratione numquam quidem illum ipsa praesentium!</p>
+        <div className="h-100 flex flex-col bg-gray-100 rounded-2xl p-5">
+            <h2 className="text-left text-2xl font-bold">Your Cart</h2>
+            <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
+                <ShoppingCart size={50} />
+                <p>Your cart is empty</p>
+            </div>
         </div>
+
+
     );
 };
 

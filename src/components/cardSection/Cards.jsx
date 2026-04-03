@@ -6,7 +6,6 @@ const Cards = ({cardInfo,carts, setCarts}) => {
     const handleBuy = () =>{
         setBtn(true);
         const findCart = carts.find((item)=>item.id === cardInfo.id);
-        console.log(findCart);
         if(findCart){
             toast.error(`${cardInfo.name} already added`);
             return;
@@ -36,7 +35,7 @@ const Cards = ({cardInfo,carts, setCarts}) => {
                     }
                 </ul>
                 <div className="mt-3">
-                    <button onClick={handleBuy} className={`btn ${btn?"btn-success":"btn-primary"} btn-block border-none`}>{btn?"Added to Cart":"Buy Now"}</button>
+                    <button onClick={handleBuy} className={`btn ${btn?"btn-success":"bg-linear-to-r from-primary to-purple-500 text-white"} btn-block border-none`}>{btn?"Added to Cart":"Buy Now"}</button>
                 </div>
             </div>
         </div>

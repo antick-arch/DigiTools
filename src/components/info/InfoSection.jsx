@@ -13,7 +13,7 @@ const InfoSection = () => {
             <div className='grid grid-cols-3 place-items-center'>
                 <div className='card w-95 h-95 text-center space-y-4 bg-white p-6'>
                     <div className="flex justify-end">
-                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-linear-to-r from-primary to-purple-500 text-white">
                             <span>01</span>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const InfoSection = () => {
                 </div>
                 <div className='card w-95 h-95 text-center space-y-4 bg-white p-6'>
                     <div className="flex justify-end">
-                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-linear-to-r from-primary to-purple-500 text-white">
                             <span>02</span>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ const InfoSection = () => {
                 </div>
                 <div className='card w-95 h-95 text-center space-y-4 bg-white p-6'>
                     <div className="flex justify-end">
-                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-linear-to-r from-primary to-purple-500 text-white">
                             <span>03</span>
                         </div>
                     </div>
