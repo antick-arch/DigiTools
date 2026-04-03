@@ -17,7 +17,15 @@ const Cards = ({cardInfo,carts, setCarts}) => {
         <div className="card w-96 bg-base-100 shadow-sm">
             <div className="card-body">
                 <div className='flex justify-end rounded-full'>
-                    <span className="badge badge-xs badge-warning">{cardInfo.tag}</span>
+                    <span className={`badge badge-soft 
+                        ${
+                            cardInfo.tag.toLowerCase() === "popular"?'badge-primary':
+                            cardInfo.tag.toLowerCase() === "best seller"?'badge-warning':
+                            cardInfo.tag.toLowerCase() === "new"?'badge-success':'' 
+                        }
+                        `}>
+                        {cardInfo.tag}
+                        </span>
                 </div>
                 <div>
                     <div className='h-12 w-12 flex items-center mb-3 border border-gray-200 rounded-full p-2'>
