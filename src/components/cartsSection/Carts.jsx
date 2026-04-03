@@ -17,7 +17,7 @@ const Carts = ({ carts, setCarts, totalPrice }) => {
                 <p className='text-gray-500'>Total:</p>
                 <h2 className='text-2xl font-bold'>${totalPrice.toFixed(2)}</h2>
             </div>
-            <button onClick={handleCheckout} className='btn btn-primary w-full rounded-full '>Proceed to Checkout</button>
+            <button onClick={handleCheckout} className='btn bg-linear-to-r from-primary to-purple-500 text-white font-bold border-none w-full rounded-full'>Proceed to Checkout</button>
         </div>
     );
 };
