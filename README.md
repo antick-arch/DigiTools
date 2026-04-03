@@ -44,7 +44,7 @@ The app includes checkout interaction with success and error toast notifications
 
 ### Product and Cart Flow (GIF)
 
-![DigiTools Cart Flow](./src/assets/products/demo-preview.gif)
+![DigiTools Cart Flow](./src/assets/products/demo-preview.png)
 
 > Replace these preview file paths with your actual screenshot and GIF files.
 
@@ -63,5 +63,5 @@ npm run build
 
 ## Author & Contact
 
-- Name: Your Name
-- Email: your.email@example.com
+- Name: Antick Chandra Kuri
+- Email: antickroy018@gmail.com
