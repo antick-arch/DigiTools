@@ -1,4 +1,3 @@
-import React from 'react';
 import CartCard from './CartCard';
 import { toast } from 'react-toastify';
 

@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaSquareFacebook } from 'react-icons/fa6';
+import { RiTwitterXLine } from 'react-icons/ri';
+import { TbBrandInstagramFilled } from 'react-icons/tb';
 
 const Footer = () => {
     return (
@@ -19,28 +22,28 @@ const Footer = () => {
                 </div>
                 <div>
                     <ul>
-                        <li className='font-bold text-xl'>Product</li>
-                        <li className='text-gray-300'>Features </li>
-                        <li className='text-gray-300'>Pricing </li>
-                        <li className='text-gray-300'>Templates </li>
-                        <li className='text-gray-300'>Integrations</li>
+                        <li className='font-bold text-xl'>Company</li>
+                        <li className='text-gray-300'>About </li>
+                        <li className='text-gray-300'>Blog </li>
+                        <li className='text-gray-300'>Careers </li>
+                        <li className='text-gray-300'>Press</li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li className='font-bold text-xl'>Product</li>
-                        <li className='text-gray-300'>Features </li>
-                        <li className='text-gray-300'>Pricing </li>
-                        <li className='text-gray-300'>Templates </li>
-                        <li className='text-gray-300'>Integrations</li>
+                        <li className='font-bold text-xl'>Resources</li>
+                        <li className='text-gray-300'>Documentation</li>
+                        <li className='text-gray-300'>Help Center</li>
+                        <li className='text-gray-300'>Community</li>
+                        <li className='text-gray-300'>Contact</li>
                     </ul>
                 </div>
-                <div>
-                    <p className='font-bold text-xl'>Product</p>
-                    <div>
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                <div className='space-y-3'>
+                    <p className='font-bold text-xl'>Social Links</p>
+                    <div className='flex gap-3'>
+                        <button className='p-2 bg-white rounded-full text-black'><TbBrandInstagramFilled size={20}/></button>
+                        <button className='p-2 bg-white rounded-full text-black'><FaSquareFacebook size={20}/></button>
+                        <button className='p-2 bg-white rounded-full text-black'><RiTwitterXLine size={20}/></button>
                     </div>
 
                 </div>

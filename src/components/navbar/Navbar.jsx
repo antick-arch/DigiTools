@@ -1,5 +1,6 @@
 import { ShoppingCart } from 'lucide-react';
 import React, { use } from 'react';
+import Carts from '../cartsSection/Carts';
 
 const Navbar = ({ navPromise,carts,totalPrice }) => {
     const navData = use(navPromise).data;

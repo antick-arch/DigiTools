@@ -9,7 +9,7 @@ import { Divide, Info } from 'lucide-react';
 import InfoSection from './components/info/InfoSection';
 import FeatureContainer from './components/featureSection/FeatureContainer';
 import Transform from './components/TransformSection/Transform';
-import Footer from './components/footer/footer';
+import Footer from './components/footer/Footer';
 
 const navPromise = axios.get('nav.json');
 const cardPromise = axios.get('cardData.json');
